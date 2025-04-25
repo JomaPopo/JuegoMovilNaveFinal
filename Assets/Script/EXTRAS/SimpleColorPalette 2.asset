@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4bf65ef3fe47e2489bfeabedc675d9d, type: 3}
+  m_Name: SimpleColorPalette 2
+  m_EditorClassIdentifier: 
+  backgroundColor: {r: 0.100863464, g: 1, b: 0.02352941, a: 1}
+  textColor: {r: 1, g: 0.6900021, b: 0.36470592, a: 1}
+  buttonNormalColor: {r: 0.172549, g: 0.23543693, b: 0.8117647, a: 1}
