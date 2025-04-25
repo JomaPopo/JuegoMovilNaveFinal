@@ -147,7 +147,7 @@ RectTransform:
   m_GameObject: {fileID: 2807377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.742213, y: 5.742213, z: 5.742213}
+  m_LocalScale: {x: 5.2398267, y: 5.742213, z: 5.742213}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 238439246}
@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 421, y: -391}
+  m_AnchoredPosition: {x: 501, y: -169}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2807379
@@ -454,7 +454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -873, y: 91}
+  m_AnchoredPosition: {x: -873, y: -16.99999}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &171400778
@@ -501,13 +501,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1030075236}
+      - m_Target: {fileID: 1030075237}
         m_TargetAssemblyTypeName: UIThemeApplier, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: ApplyColors
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 2af9bc46fa5e790409e2ba2d11be8ad7, type: 2}
+          m_ObjectArgumentAssemblyTypeName: SimpleColorPalette, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -533,8 +533,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ad96adf350663d947837af73990e581d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aceler\xF3metro \n"
+  m_text: "Acelerometro \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6992bca1a06594f4f8744936a502dc51, type: 2}
   m_sharedMaterial: {fileID: -5473390988195531978, guid: 6992bca1a06594f4f8744936a502dc51, type: 2}
@@ -1192,7 +1192,7 @@ RectTransform:
   m_GameObject: {fileID: 590867410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.4830112, y: 5.4830112, z: 5.4830112}
+  m_LocalScale: {x: 5.0033026, y: 5.4830112, z: 5.4830112}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1226472117}
@@ -1200,7 +1200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 395.45, y: 139.82002}
+  m_AnchoredPosition: {x: 509, y: 76}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &590867412
@@ -1313,14 +1313,14 @@ RectTransform:
   m_GameObject: {fileID: 623759995}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 6, z: 5}
+  m_LocalScale: {x: 3.6670544, y: 4.400465, z: 3.6670544}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1235842346}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 667, y: -350}
+  m_AnchoredPosition: {x: 478.25, y: -295}
   m_SizeDelta: {x: 38, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623759997
@@ -2276,14 +2276,14 @@ RectTransform:
   m_GameObject: {fileID: 1325094854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.3638, y: 6.3638, z: 6.3638}
+  m_LocalScale: {x: 3.9455593, y: 6.3638, z: 6.3638}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1787569655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1975, y: 485}
+  m_AnchoredPosition: {x: -2690, y: 235}
   m_SizeDelta: {x: 332.84, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1325094856
@@ -2413,14 +2413,14 @@ RectTransform:
   m_GameObject: {fileID: 1436162398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 6, z: 5}
+  m_LocalScale: {x: 3.6670544, y: 4.400465, z: 3.6670544}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1235842346}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 1, y: -356}
+  m_AnchoredPosition: {x: 3.1328, y: -305}
   m_SizeDelta: {x: 38, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436162400
@@ -2552,7 +2552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -873, y: -46}
+  m_AnchoredPosition: {x: -873, y: -154}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455537691
@@ -2599,13 +2599,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1030075236}
+      - m_Target: {fileID: 1030075237}
         m_TargetAssemblyTypeName: UIThemeApplier, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: ApplyColors
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 2e1c7eb1ef849a646a2b06ba6bf488af, type: 2}
+          m_ObjectArgumentAssemblyTypeName: SimpleColorPalette, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2631,8 +2631,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ad96adf350663d947837af73990e581d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2730,8 +2730,8 @@ Transform:
   m_GameObject: {fileID: 1480907795}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.3, z: -21.09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9e-15, y: 1.3, z: -21.09}
+  m_LocalScale: {x: 1.0875, y: 1.2625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2764,14 +2764,14 @@ RectTransform:
   m_GameObject: {fileID: 1481652094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 6, z: 5}
+  m_LocalScale: {x: 3.6670544, y: 4.400465, z: 3.6670544}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1235842346}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -649, y: -346}
+  m_AnchoredPosition: {x: -460.25, y: -292.08002}
   m_SizeDelta: {x: 38, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481652096
@@ -2903,7 +2903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -873, y: 227}
+  m_AnchoredPosition: {x: -873, y: 119}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581101725
@@ -2950,13 +2950,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1030075236}
-        m_TargetAssemblyTypeName: MinimalColorManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1030075237}
+        m_TargetAssemblyTypeName: UIThemeApplier, Assembly-CSharp
+        m_MethodName: ApplyColors
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: ef954abd00edc3c4aac9f34a6e732445, type: 2}
+          m_ObjectArgumentAssemblyTypeName: SimpleColorPalette, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2982,8 +2982,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ad96adf350663d947837af73990e581d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3436,14 +3436,14 @@ RectTransform:
   m_GameObject: {fileID: 2100293946}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6516716, y: 2.6516716, z: 2.6516716}
+  m_LocalScale: {x: 2.2298436, y: 2.2298436, z: 2.2298436}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 535277787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -326, y: 408}
+  m_AnchoredPosition: {x: -326, y: 315}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2100293948
