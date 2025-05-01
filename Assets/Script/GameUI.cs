@@ -19,53 +19,55 @@ public class GameUI : MonoBehaviour
     [SerializeField] private float elapsedTime;
     [SerializeField] private Coroutine scoreCoroutine;
     [SerializeField] private float vida = 2;
+    [SerializeField] private NotificationSimple notificationSystem;
 
     void OnEnable()
     {
-        // Suscribirse al evento
-        Bullet.adpoints += add;
+        Bullet.adpoints += AddPoints;
     }
 
     void OnDisable()
     {
-        Bullet.adpoints -= add;
+        Bullet.adpoints -= AddPoints;
     }
-    void Awake() 
+
+    void Awake()
     {
         GameManager.Instance.sceneUI = this;
-        UpdateHealth(GameManager.Instance.currentHealth,GameManager.Instance.selectedShip.maxHealth);
+        UpdateHealth(GameManager.Instance.currentHealth, GameManager.Instance.selectedShip.maxHealth);
         InitializeUI();
         StartScoring();
-
     }
+
     void InitializeUI()
     {
-        UpdateHealth(
-            GameManager.Instance.currentHealth,
-            GameManager.Instance.selectedShip.maxHealth
-        );
+        UpdateHealth(GameManager.Instance.currentHealth, GameManager.Instance.selectedShip.maxHealth);
         currentScore = 0;
         elapsedTime = 0f;
         UpdateScore();
         UpdateTimer();
         InitializeSystems();
     }
-    void add()
+
+    void AddPoints()
     {
-        currentScore=currentScore+50;
+        currentScore += 50;
+        UpdateScore();
     }
+
     void StartScoring()
     {
         if (scoreCoroutine != null) StopCoroutine(scoreCoroutine);
         scoreCoroutine = StartCoroutine(AutoAddPoints());
     }
+
     IEnumerator AutoAddPoints()
     {
         while (true)
         {
             yield return new WaitForSeconds(scoreInterval);
             multi = GameManager.Instance.selectedShip.speed;
-            currentScore += pointsPerInterval*multi;
+            currentScore += pointsPerInterval * multi;
             UpdateScore();
         }
     }
@@ -77,10 +79,7 @@ public class GameUI : MonoBehaviour
         scoreCoroutine = StartCoroutine(AutoAddPoints());
         UpdateHealth(GameManager.Instance.currentHealth, GameManager.Instance.selectedShip.maxHealth);
     }
-    private void Start()
-    {
 
-    }
     void Update()
     {
         elapsedTime += Time.deltaTime;
@@ -91,14 +90,26 @@ public class GameUI : MonoBehaviour
             UpdateTimer();
         }
     }
+
     public void UpdateHealth(int current, int max)
     {
         healthText.text = $"SALUD: {current}/{max}";
         vida = current;
+
         if (current <= 0)
         {
-            // Actualizar el máximo puntaje en el ScriptableObject
-            scoreData.MaxScore = currentScore;
+            bool isNewRecord = currentScore > scoreData.MaxScore;
+            if (notificationSystem != null)
+            {
+                notificationSystem.SendScoreNotification(currentScore);
+            }
+
+            if (isNewRecord)
+            {
+                scoreData.MaxScore = currentScore;
+            }
+
+
             GuardarDatosYCambiarEscena();
         }
     }
@@ -110,6 +121,7 @@ public class GameUI : MonoBehaviour
         PlayerPrefs.Save();
         SceneGlobalManager.Instance.CargarResult();
     }
+
     void UpdateScore()
     {
         scoreText.text = $"PUNTOS: {currentScore}";
@@ -120,6 +132,7 @@ public class GameUI : MonoBehaviour
         System.TimeSpan time = System.TimeSpan.FromSeconds(elapsedTime);
         timerText.text = $"TIEMPO: {time:mm\\:ss}";
     }
+
     void OnDestroy()
     {
         if (scoreCoroutine != null) StopCoroutine(scoreCoroutine);
